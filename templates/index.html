@@ -43,14 +43,14 @@
           {% if submit and answer %}
           <div class="main-card p-4 p-md-5 animate__animated animate__fadeIn">
             <h2 class="h4 fw-bold mb-2">{{ answer.responseHeading }}</h2>
-            <p class="small text-muted mb-4 text-uppercase">
+            <p class="small text-success mb-4 text-uppercase">
               Standard First Aid Procedure
             </p>
 
             <div class="steps-container">
               {% for step in answer.responseBody %}
               <div class="step-box">
-                <span class="d-block small text-muted mb-1"
+                <span class="d-block small text-danger mb-1"
                   >Step {{ loop.index }}</span
                 >
                 {{ step }}
@@ -60,9 +60,9 @@
 
             <div class="divider"></div>
 
-            <div class="conclusion-box">
+            <div class="conclusion-box mt-3">
               <h6 class="text-white fw-bold mb-2">Medical Recommendation</h6>
-              <p class="mb-0 text-muted" style="line-height: 1.6">
+              <p class="mb-0 text-white" style="line-height: 1.6">
                 {{ answer.responseConclusion }}
               </p>
             </div>
