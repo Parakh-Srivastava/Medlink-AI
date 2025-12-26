@@ -1,0 +1,75 @@
+:root {
+  --bg-dark: #0f1113;
+  --card-dark: #1a1d21;
+  --accent-green: #00cf8d;
+  --text-muted: #9ba1a6;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  font-family: "Inter", -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--accent-green) !important;
+}
+
+.main-card {
+  background-color: var(--card-dark);
+  border: 1px solid #2d3238;
+  border-radius: 12px;
+}
+
+.form-control {
+  background-color: #0f1113;
+  border: 1px solid #2d3238;
+  color: white;
+  padding: 1.2rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: #0f1113;
+  color: white;
+  border-color: var(--accent-green);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-green);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #00b37a;
+  transform: translateY(-1px);
+}
+
+.step-box {
+  background-color: #252a2f;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--accent-green);
+}
+
+.conclusion-box {
+  background-color: rgba(0, 207, 141, 0.05);
+  border: 1px dashed var(--accent-green);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.divider {
+  height: 1px;
+  background: #2d3238;
+  margin: 2rem 0;
+}
