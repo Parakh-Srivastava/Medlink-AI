@@ -4,15 +4,18 @@ import json
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-
 app = Flask(__name__)
 
-API_KEY = os.getenv("GEMINI_API_KEY")
-
 @app.route('/', methods=['GET','POST'])
+
+def getApi():
+    load_dotenv()
+    API_KEY = os.getenv("GEMINI_API_KEY")
+    return API_KEY
+
 def index():
 
+    API_KEY = getApi()
     css_ = url_for('static', filename='styles.css')
     answer = None
     submitted = False
