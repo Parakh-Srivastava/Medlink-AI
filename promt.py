@@ -18,7 +18,7 @@ class AI:
         {{
           "responseHeading": "The specific injury name (String)",
           "responseBody": ["Step 1", "Step 2", "Step 3", "Step 4"],
-          "responseConclusion": "Advice on finding a doctor (String) ending with 'Baingan'"
+          "responseConclusion": "Advice on finding a doctor (String) ending with 'Stay safe!'"
         }}
         
         User Query: {user_input}
@@ -31,6 +31,6 @@ class AI:
         except Exception as e:
             return json.dumps({
                 "responseHeading": "API Error",
-                "responseBody": str(e),
+                "responseBody": ("Error Occured"),
                 "responseConclusion": "Error."
             })
