@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{css_path}}" />
   </head>
   <body>
+    <script src="../static/script.js"></script>
+
     <nav class="navbar navbar-dark py-4">
       <div class="container justify-content-center">
         <a class="navbar-brand" href="#">MEDLINK.AI</a>
@@ -34,14 +36,22 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
+              <button
+                type="submit"
+                class="btn btn-primary w-100"
+                id="submitBtn"
+                onclick="changeText()"
+              >
                 Generate Protocol
               </button>
             </form>
           </div>
 
           {% if submit and answer %}
-          <div class="main-card p-4 p-md-5 animate__animated animate__fadeIn">
+          <div
+            class="main-card p-4 p-md-5 animate__animated animate__fadeIn"
+            id="main-card"
+          >
             <h2 class="h4 fw-bold mb-2">{{ answer.responseHeading }}</h2>
             <p class="small text-success mb-4 text-uppercase">
               Standard First Aid Procedure
