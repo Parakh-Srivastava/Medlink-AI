@@ -1,2 +1,5 @@
-googl.genai
-flask
+Flask
+Flask-SQLAlchemy
+google-genai
+python-dotenv
+gunicorn
