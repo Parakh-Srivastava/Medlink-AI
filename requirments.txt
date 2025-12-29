@@ -1,2 +1,2 @@
-google.generativeai
+googl.genai
 flask
